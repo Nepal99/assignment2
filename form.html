@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Practice</title>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+  
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<body>
+
+<div class="container">
+<h1>Form Practice</h1>
+  <form class="form-horizontal" action="mailto:mnnr.nepal@gmail.com" method="post" enctype="text/plain" >
+              First name:
+              <br/>
+              <input type="text" name="firstname" value="" id="fName">
+              <br/>
+              Last name:
+              <br/>
+              <input type="text" name="lastname" value="" id="lName">
+              <br/>
+              Address:
+              <br/>
+              <input type="text" name="address" value="" id="addr">
+              <br/>
+              City:
+              <br/>
+              <input type="text" name="city" value="" id="city">
+              <br/>
+              State:
+              <br/>
+              <input type="text" name="state" value="" id="state">
+              <br/>
+              Zip Code:
+              <br/>
+              <input type="text" name="zipcode" value="" id="zipCode">
+              <br/>
+              Message:
+              <br/>
+              <textarea>  </textarea>
+              <br/>
+              <input type="submit" onclick="displayWindow()" value="Submit" id="dispWindow">
+          </form> 
+</div>
+
+<script type="text/javascript">
+  
+
+  $(document).ready(function(){
+
+    $("#dispWindow").click(function(){
+      var y = $("#fName").val() + $("#lName").val()+ $("#addr").val()+$("#city").val()+$("#state").val()+$("#zipCode").val();
+      alert(y);
+    });
+
+
+
+
+  });
+
+</script>
+
+</body>
+
+</html>
